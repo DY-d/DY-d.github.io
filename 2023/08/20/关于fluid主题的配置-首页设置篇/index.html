@@ -25,17 +25,29 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://dy-d.github.io/img/page/fluid_about/home.png">
 <meta property="article:published_time" content="2023-08-19T16:41:07.000Z">
-<meta property="article:modified_time" content="2023-08-20T04:08:36.480Z">
+<meta property="article:modified_time" content="2023-08-22T02:49:25.861Z">
 <meta property="article:author" content="Deng Yang">
-<meta property="article:tag" content="Fluid">
 <meta property="article:tag" content="使用教程">
 <meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Fluid">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://dy-d.github.io/img/page/fluid_about/home.png">
   
   
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
   
   <title>关于fluid主题的配置-首页设置篇 - 遥望</title>
+  <style>
+    .live2d {
+        position: fixed;
+        left: -100px;
+        bottom: -20px;
+        width: 440px !important;
+        height: 397.5px !important;
+        z-index: 998;
+    }
+  </style>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -68,6 +80,9 @@
   
 
 
+
+  
+<link rel="stylesheet" href="/cust_css/custom.css">
 
 
   <script id="fluid-configs">
@@ -245,6 +260,11 @@
           
   <div class="mt-3">
     
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        Deng Yang
+      </span>
+    
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
@@ -260,7 +280,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          599 字
+          657 字
         
       </span>
     
@@ -271,12 +291,20 @@
         
         
         
-          5 分钟
+          6 分钟
         
       </span>
     
 
     
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+      
     
   </div>
 
@@ -310,10 +338,21 @@
           <article class="post-content mx-auto">
             <h1 id="seo-header">关于fluid主题的配置-首页设置篇</h1>
             
+              <p class="note note-info">
+                
+                  
+                    本文最后更新于：14 小时前
+                  
+                
+              </p>
+            
             
               <div class="markdown-body">
                 
-                <h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><h3 id="打字机效果"><a href="#打字机效果" class="headerlink" title="打字机效果"></a>打字机效果</h3><p>首页大图的打字机效果可以在 <strong>_config.fluid.yml</strong>  中设置：</p>
+                <blockquote>
+<p>关于如何使用Hexo博客系统的Fluid主题，包括首页设置。Fluid：一款 Material Design 风格的主题。</p>
+</blockquote>
+<h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><h3 id="打字机效果"><a href="#打字机效果" class="headerlink" title="打字机效果"></a>打字机效果</h3><p>首页大图的打字机效果可以在 <strong>_config.fluid.yml</strong>  中设置：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">index:</span><br>  <span class="hljs-attr">slogan:</span><br>    <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>    <span class="hljs-attr">text:</span> <span class="hljs-string">这是一条</span> <span class="hljs-string">Slogan</span><br>    <span class="hljs-attr">api:</span><br>      <span class="hljs-attr">enable:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">url:</span> <span class="hljs-string">&quot;https://v1.hitokoto.cn/&quot;</span><br>      <span class="hljs-attr">method:</span> <span class="hljs-string">&quot;GET&quot;</span><br>      <span class="hljs-attr">headers:</span> &#123;&#125;<br>      <span class="hljs-attr">keys:</span> [<span class="hljs-string">&quot;hitokoto&quot;</span>]<br></code></pre></td></tr></table></figure>
 
 <p>如果 <code>text</code> 为空，则按 <strong>_config.yml</strong> 中的 <code>subtitle</code> 显示。</p>
@@ -395,11 +434,11 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Fluid/" class="print-no-link">#Fluid</a>
-      
         <a href="/tags/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" class="print-no-link">#使用教程</a>
       
         <a href="/tags/Hexo/" class="print-no-link">#Hexo</a>
+      
+        <a href="/tags/Fluid/" class="print-no-link">#Fluid</a>
       
     </div>
   
@@ -427,6 +466,11 @@
           <div>2023年8月20日</div>
         </div>
       
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2023年8月22日</div>
+        </div>
       
       
         <div class="license-meta-item">
@@ -488,7 +532,7 @@
       Fluid.utils.createCssLink('https://cdn.staticfile.org/waline/2.15.5/waline.min.css')
       Fluid.utils.createScript('https://cdn.staticfile.org/waline/2.15.5/waline.min.js', function() {
         var options = Object.assign(
-          {"serverURL":"https://blog-r7l4kc94c-dy-d.vercel.app","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo","https://unpkg.com/@waline/emojis@1.2.0/bilibili","https://unpkg.com/@waline/emojis@1.2.0/tw-emoji"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10,"reaction":true},
+          {"serverURL":"https://blog-lwa8hfyxl-dy-d.vercel.app","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo","https://unpkg.com/@waline/emojis@1.2.0/bilibili","https://unpkg.com/@waline/emojis@1.2.0/tw-emoji"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10,"reaction":true,"TG_BOT_TOKEN":"6589684088:AAEsd9XgpWoILkU8hBNSUZI1n8DzuxjMwfo","TG_CHAT_ID":"5663262573","AUTHOR_EMAIL":"779581791@qq.com","SITE_NAME":"遥望-个人博客","SITE_URL":"https://dy-d.github.io/"},
           {
             el: '#waline',
             path: window.location.pathname
@@ -602,7 +646,7 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <br><span id="timeDate">天数载入中</span><span id="times">...</span><br> <p>Copyright © 2023 - <span id="currentYear"></span> All Rights Reserved.</p> 
     </div>
   
   
@@ -752,7 +796,13 @@
 
   <script  src="/js/local-search.js" ></script>
 
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
+
+
+
+  
+<script src="/cust_js/custom.js"></script>
 
 
 
@@ -766,5 +816,10 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
+
+  <div id="live2d" class="live2d">
+    <canvas id="live2dm" class="live2d" style="z-index: 999!important;"></canvas>
+</div>
+<script src="https://npm.elemecdn.com/chenyfan-oss@2.0.3"></script>
 </body>
 </html>
