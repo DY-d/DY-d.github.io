@@ -50,3 +50,12 @@ svg {
 	cursor: url(/img/cursor/Hand2.cur),auto !important;
 	background-color: rgba(0, 0, 0, 0.0);
 }
+
+.index-img {
+	transition: .4s;
+}
+
+.index-card:hover .index-img {
+	transform: scale(1.05);
+}
+
