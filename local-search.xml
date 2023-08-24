@@ -4,6 +4,39 @@
   
   
   <entry>
+    <title>Hexo-3-Fluid主题魔改</title>
+    <link href="/2023/08/24/Hexo-3-Fluid%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/"/>
+    <url>/2023/08/24/Hexo-3-Fluid%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>Fluid主题其实已经很好了，但是由于喜欢折腾，还是在网上学习了如何对Fluid进行魔改，本文章记录了如何修改鼠标样式，主页文章缩略图动画，背景动态线条，鼠标滑动特效以及网站标题变化。</p></blockquote><h2 id="加载自定义JS和CSS"><a href="#加载自定义JS和CSS" class="headerlink" title="加载自定义JS和CSS"></a>加载自定义JS和CSS</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>Hexo</category>
+      
+      <category>Theme</category>
+      
+      <category>Fluid</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+      <tag>Fluid</tag>
+      
+      <tag>Theme</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Live2d-看板娘添加教程</title>
     <link href="/2023/08/21/Live2d-%E7%9C%8B%E6%9D%BF%E5%A8%98%E6%B7%BB%E5%8A%A0%E6%95%99%E7%A8%8B/"/>
     <url>/2023/08/21/Live2d-%E7%9C%8B%E6%9D%BF%E5%A8%98%E6%B7%BB%E5%8A%A0%E6%95%99%E7%A8%8B/</url>
