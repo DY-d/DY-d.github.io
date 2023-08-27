@@ -16,28 +16,27 @@
   <meta name="author" content="Deng Yang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Waline是一款基于Valine衍生的简洁、安全的评论系统，本文主要记录如何在自己的博客系统中引入评论插件。">
+    <meta name="description" content="关于如何使用Hexo搭建自己的博客系统。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Waline-1-在个人博客中配置Waline评论插件">
-<meta property="og:url" content="https://www.eurekady.com/2023/08/20/Waline-1-%E5%9C%A8%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E9%85%8D%E7%BD%AEWaline%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/index.html">
+<meta property="og:title" content="Hexo-1-搭建博客系统">
+<meta property="og:url" content="https://www.eurekady.com/2023/08/17/Hexo-1-create-blog-system/index.html">
 <meta property="og:site_name" content="遥望">
-<meta property="og:description" content="Waline是一款基于Valine衍生的简洁、安全的评论系统，本文主要记录如何在自己的博客系统中引入评论插件。">
+<meta property="og:description" content="关于如何使用Hexo搭建自己的博客系统。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.eurekady.com/img/page/waline_about/home.png">
-<meta property="article:published_time" content="2023-08-20T10:38:24.000Z">
-<meta property="article:modified_time" content="2023-08-22T02:50:18.907Z">
+<meta property="og:image" content="https://www.eurekady.com/img/page/hexo_about/home.jpg">
+<meta property="article:published_time" content="2023-08-17T03:35:09.444Z">
+<meta property="article:modified_time" content="2023-08-27T13:00:32.617Z">
 <meta property="article:author" content="Deng Yang">
-<meta property="article:tag" content="Web前端">
-<meta property="article:tag" content="中间件">
-<meta property="article:tag" content="Waline">
+<meta property="article:tag" content="使用教程">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.eurekady.com/img/page/waline_about/home.png">
+<meta name="twitter:image" content="https://www.eurekady.com/img/page/hexo_about/home.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Waline-1-在个人博客中配置Waline评论插件 - 遥望</title>
+  <title>Hexo-1-搭建博客系统 - 遥望</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -256,7 +255,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Waline-1-在个人博客中配置Waline评论插件"></span>
+            <span id="subtitle" data-typed-text="Hexo-1-搭建博客系统"></span>
           
         </div>
 
@@ -272,8 +271,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-08-20 18:38" pubdate>
-          2023年8月20日 晚上
+        <time datetime="2023-08-17 11:35" pubdate>
+          2023年8月17日 中午
         </time>
       </span>
     
@@ -284,7 +283,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.7k 字
+          1.7k 字
         
       </span>
     
@@ -295,7 +294,7 @@
         
         
         
-          12 分钟
+          8 分钟
         
       </span>
     
@@ -404,12 +403,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Waline-1-在个人博客中配置Waline评论插件</h1>
+            <h1 id="seo-header">Hexo-1-搭建博客系统</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：5 天前
+                    本文最后更新于：3 分钟前
                   
                 
               </p>
@@ -418,125 +417,54 @@
               <div class="markdown-body">
                 
                 <blockquote>
-<p>Waline是一款基于Valine衍生的简洁、安全的评论系统，本文主要记录如何在自己的博客系统中引入改评论插件。</p>
+<p>建立个人博客的需求由来已久，能拥有自己的技术博客是广大程序员的梦想。相比于早些时候的WordPress、织梦等框架，就个人站点来说，用Hexo搭建博客可以用“怎一个爽字了得”形容。Hexo基于Node.js开发，具有轻量、方便、易部署等特点，主题丰富简约，依赖github即可构建站点，近些年受到广泛关注。此篇文章旨在和与我一样的初学者分享经验，有疑问欢迎在评论区交流。</p>
 </blockquote>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Waline 是一款基于 Valine 衍生的简洁、安全的评论系统。</p>
+<h2 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h2><ul>
+<li><code>github账号</code>：需要申请一个属于你的github账号，可以在<a target="_blank" rel="noopener" href="https://github.com/"><font color='#3eaf7c'>这里申请</font></a>。</li>
+<li><code>git bash</code>： 需要有git bash运行环境，相关安装和使用教程请询问度娘。</li>
+<li><code>Node.js</code>： 必须安装 Node.js 开发环境，建议参考<a href=""><font color='#3eaf7c'>node.js 安装</font></a></li>
+</ul>
+<h2 id="Hexo的安装，初始化和本地预览"><a href="#Hexo的安装，初始化和本地预览" class="headerlink" title="Hexo的安装，初始化和本地预览"></a>Hexo的安装，初始化和本地预览</h2><h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>在shell命令窗口输入下面命令</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ <span class="hljs-built_in">mkdir</span> my_hexo<br>$ <span class="hljs-built_in">cd</span> my_hexo<br>$ npm install hexo<br></code></pre></td></tr></table></figure>
+
+<p>或者下面全局安装</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ npm install -g hexo-cli<br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h3><p>创建一个文件夹，并且输入建站命令，如下：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ <span class="hljs-built_in">mkdir</span> myBlog<br>$ <span class="hljs-built_in">cd</span> myBlog<br>$ npx hexo init<br></code></pre></td></tr></table></figure>
+
+<p>新建完成后，指定文件夹的目录如下：</p>
+<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs 1c">.<br>├── _config.yml<br>├── package.json<br>├── scaffolds<br>├── source<br><span class="hljs-string">|   ├── _drafts</span><br><span class="hljs-string">|   └── _posts</span><br>└── themes<br></code></pre></td></tr></table></figure>
+
 <ul>
-<li>官网链接：<a target="_blank" rel="noopener" href="https://waline.js.org/">https://waline.js.org/</a></li>
-<li>相对于 Valine 有一些后天的优势：</li>
+<li><code>_config.yml</code>：站点配置文件。</li>
+<li><code>source</code>：生成的文章在该文件下的 <code>_post</code> 文件夹中。个人博客网站的图片都存在改文件夹下。</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>优势</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>自由评论</td>
-<td>完全的 Markdown 支持，同时包含表情、数学公式、HTML 嵌入</td>
-</tr>
-<tr>
-<td>轻量</td>
-<td>54kB gzip 的完整客户端大小</td>
-</tr>
-<tr>
-<td>强大的安全性</td>
-<td>内容校验、防灌水、保护敏感数据等</td>
-</tr>
-<tr>
-<td>登录支持</td>
-<td>在允许匿名评论的基础上，支持账号注册，保持身份</td>
-</tr>
-<tr>
-<td>完全免费部署</td>
-<td>可免费部署在 Vercel 上</td>
-</tr>
-<tr>
-<td>易于部署</td>
-<td>多种部署部署方式和存储服务支持</td>
-</tr>
-</tbody></table>
-<h2 id="LeanCloud-设置-数据库"><a href="#LeanCloud-设置-数据库" class="headerlink" title="LeanCloud 设置 (数据库)"></a>LeanCloud 设置 (数据库)</h2><ol>
-<li><a target="_blank" rel="noopener" href="https://console.leancloud.app/login">登录</a> 或 <a target="_blank" rel="noopener" href="https://console.leancloud.app/register">注册</a> <code>LeanCloud 国际版</code> 并进入 <a target="_blank" rel="noopener" href="https://console.leancloud.app/apps">控制台</a></li>
-<li>点击左上角 <a target="_blank" rel="noopener" href="https://console.leancloud.app/apps">创建应用</a> 并起一个你喜欢的名字 (请选择免费的开发版):</li>
-</ol>
-<p><img src="/img/page/2023/08/20/leancloud-1.png" srcset="/img/loading.gif" lazyload></p>
-<ol start="3">
-<li>进入应用，选择左下角的 <code>设置</code> &gt; <code>应用 Key</code>。你可以看到你的 <code>APP ID</code>,<code>APP Key</code> 和 <code>Master Key</code>。请记录它们，以便后续使用。</li>
-</ol>
-<p><img src="/img/page/2023/08/20/leancloud-2.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h3><p>为了查看本地站点的实际效果，可以输入下面命令：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ npx hexo server<br></code></pre></td></tr></table></figure>
+
+<p>会在本地搭建服务器挂载生成的本地站点，通过访问 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 浏览自己的网站。</p>
+<h2 id="Hexo部署到GitHub"><a href="#Hexo部署到GitHub" class="headerlink" title="Hexo部署到GitHub"></a>Hexo部署到GitHub</h2><h3 id="创建GitHub仓库"><a href="#创建GitHub仓库" class="headerlink" title="创建GitHub仓库"></a>创建GitHub仓库</h3><p>仓库名必须为：&lt;Github 账号&gt;.github.io</p>
+<h3 id="安装-hexo-deployer-git"><a href="#安装-hexo-deployer-git" class="headerlink" title="安装 hexo-deployer-git"></a>安装 <strong>hexo-deployer-git</strong></h3><p>注意进入到<strong>博客网站的文件下</strong>输入下面命令：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="修改-config-yml"><a href="#修改-config-yml" class="headerlink" title="修改_config.yml"></a>修改_config.yml</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">&lt;repository</span> <span class="hljs-string">url&gt;</span> <span class="hljs-comment">#使用SSH，不适用HTTPS的，例如git@github.com:youName/youName.github.io.git</span><br>  <span class="hljs-attr">branch:</span> [<span class="hljs-string">branch</span>]<br>  <span class="hljs-attr">message:</span> [<span class="hljs-string">message</span>]<br>  <br><span class="hljs-string">----------------------------</span><br><span class="hljs-comment"># URL</span><br><span class="hljs-comment">## If your site is put in a subdirectory, set url as &#x27;http://yoursite.com/child&#x27; and root as &#x27;/child/&#x27;</span><br><span class="hljs-attr">url:</span> <span class="hljs-string">https:&lt;Github账号&gt;.github.io</span><br><span class="hljs-attr">root:</span> <span class="hljs-string">/</span><br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="推送到GitHub"><a href="#推送到GitHub" class="headerlink" title="推送到GitHub"></a>推送到GitHub</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ npx hexo g<br>$ npx hexo d<br></code></pre></td></tr></table></figure>
+
+<p>当出现下面显示语句即为成功：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">INFO  Deploy <span class="hljs-keyword">done</span>: git<br></code></pre></td></tr></table></figure>
+
+<p>访问的域名为：<code>https://&lt;Github账号&gt;.github.io</code>。</p>
 <div class="note note-warning">
-            <p><strong>国内版需要完成备案接入</strong></p><p>如果你正在使用 Leancloud 国内版 (<a target="_blank" rel="noopener" href="https://leancloud.cn/">leancloud.cnopen in new window</a>)，我们推荐你切换到国际版 (<a target="_blank" rel="noopener" href="https://leancloud.app/">leancloud.appopen in new window</a>)。否则，你需要为应用额外绑定<strong>已备案</strong>的域名，同时购买独立 IP 并完成备案接入:</p><ul><li>登录国内版并进入需要使用的应用</li><li>选择 <code>设置</code> &gt; <code>域名绑定</code> &gt; <code>API 访问域名</code> &gt; <code>绑定新域名</code> &gt; 输入域名 &gt; <code>确定</code>。</li><li>按照页面上的提示按要求在 DNS 上完成 CNAME 解析。</li><li>购买独立 IP 并提交工单完成备案接入。(独立 IP 目前价格为 ￥ 50&#x2F;个&#x2F;月)</li></ul><p><img src="/img/page/2023/08/20/leancloud-3.png" srcset="/img/loading.gif" lazyload></p>
+            <p>如果出现下面访问git失败的情况，请看 <a href="/2023/08/20/git-connections-to-remote-github-setting/" title="Git连接远程GitHub配置"><strong>Git 连接远程 GitHub 配置</strong></a></p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs sh">fatal: 无法读取远程仓库。<br><br>请确认您有正确的访问权限并且仓库存在。<br>FATAL Something<span class="hljs-string">&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br><span class="hljs-string">Error: Spawn failed</span><br><span class="hljs-string">    at ChildProcess.&lt;anonymous&gt; (/Users/dengyang/Desktop/未命名文件夹 2/myblog/node_modules/hexo-util/lib/spawn.js:51:21)</span><br><span class="hljs-string">    at ChildProcess.emit (node:events:513:28)</span><br><span class="hljs-string">    at ChildProcess._handle.onexit (node:internal/child_process:291:12)</span><br></code></pre></td></tr></table></figure>
           </div>
-
-
-
-<h2 id="Vercel-部署-服务端"><a href="#Vercel-部署-服务端" class="headerlink" title="Vercel 部署 (服务端)"></a>Vercel 部署 (服务端)</h2><p align><a target="_blank" rel="noopener" href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwalinejs%2Fwaline%2Ftree%2Fmain%2Fexample"><img src="/img/page/2023/08/20/vercel-1.svg" srcset="/img/loading.gif" lazyload></a></p>
-
-<ol>
-<li>点击上方 <code>Deploy</code> 按钮，跳转至 Vercel 进行 Server 端部署。</li>
-<li>如果你未登录的话，Vercel 会让你注册或登录，请使用 GitHub 账户进行快捷登录。</li>
-<li>输入一个你喜欢的 Vercel 项目名称并点击 <code>Create</code> 继续:</li>
-</ol>
-<p><img src="/img/page/2023/08/20/vercel-2.png" srcset="/img/loading.gif" lazyload></p>
-<ol start="4">
-<li>此时 Vercel 会基于 Waline 模板帮助你新建并初始化仓库，仓库名为你之前输入的项目名。</li>
-</ol>
-<p><img src="/img/page/2023/08/20/vercel-3.png" srcset="/img/loading.gif" lazyload></p>
-<p>一两分钟后，满屏的烟花会庆祝你部署成功。此时点击 <code>Go to Dashboard</code> 可以跳转到应用的控制台。</p>
-<p><img src="/img/page/2023/08/20/vercel-4.png" srcset="/img/loading.gif" lazyload></p>
-<ol start="5">
-<li>点击顶部的 <code>Settings</code> - <code>Environment Variables</code> 进入环境变量配置页，并配置三个环境变量 <code>LEAN_ID</code>, <code>LEAN_KEY</code> 和 <code>LEAN_MASTER_KEY</code> 。它们的值分别对应上一步在 LeanCloud 中获得的 <code>APP ID</code>, <code>APP KEY</code>, <code>Master Key</code>。</li>
-</ol>
-<p><img src="/img/page/2023/08/20/vercel-5.png" srcset="/img/loading.gif" lazyload></p>
-<div class="note note-warning">
-            <p>如果你使用 LeanCloud 国内版，请额外配置 <code>LEAN_SERVER</code> 环境变量，值为你绑定好的域名。</p>
-          </div>
-
-<ol start="6">
-<li>环境变量配置完成之后点击顶部的 <code>Deployments</code> 点击顶部最新的一次部署右侧的 <code>Redeploy</code> 按钮进行重新部署。该步骤是为了让刚才设置的环境变量生效。</li>
-</ol>
-<p><img src="/img/page/2023/08/20/vercel-6.png" srcset="/img/loading.gif" lazyload></p>
-<ol start="7">
-<li>此时会跳转到 <code>Overview</code> 界面开始部署，等待片刻后 <code>STATUS</code> 会变成 <code>Ready</code>。此时请点击 <code>Visit</code> ，即可跳转到部署好的网站地址，此地址即为你的服务端地址。</li>
-</ol>
-<p><img src="/img/page/2023/08/20/vercel-7.png" srcset="/img/loading.gif" lazyload></p>
-<h2 id="从HTML引入-客户端"><a href="#从HTML引入-客户端" class="headerlink" title="从HTML引入(客户端)"></a>从HTML引入(客户端)</h2><p>在你的网页中进行如下设置:</p>
-<ol>
-<li>使用 CDN 引入 Waline: <code>//cdn.jsdelivr.net/npm/@waline/client</code>。</li>
-<li>创建 <code>&lt;script&gt;</code> 标签使用 Waline() 函数初始化，并传入必要的 <code>el</code> 与 <code>serverURL</code> 选项。<ul>
-<li><code>el</code> 选项是 Waline 渲染使用的元素，你可以设置一个字符串形式的 CSS 选择器或者一个 HTMLElement 对象。</li>
-<li><code>serverURL</code> 是服务端的地址，即上一步获取到的值。</li>
-</ul>
-</li>
-</ol>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>  ..<br>  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;//cdn.jsdelivr.net/npm/@waline/client&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>  ...<br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>  ...<br>  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;waline&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript"></span><br><span class="language-javascript">    <span class="hljs-title class_">Waline</span>(&#123;</span><br><span class="language-javascript">      <span class="hljs-attr">el</span>: <span class="hljs-string">&#x27;#waline&#x27;</span>,</span><br><span class="language-javascript">      <span class="hljs-attr">serverURL</span>: <span class="hljs-string">&#x27;https://your-domain.vercel.app&#x27;</span>,</span><br><span class="language-javascript">    &#125;);</span><br><span class="language-javascript">  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br></code></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>评论服务此时就会在你的网站上成功运行 🎉。</li>
-</ol>
-<h2 id="Fluid-主题引入-客户端"><a href="#Fluid-主题引入-客户端" class="headerlink" title="Fluid 主题引入(客户端)"></a>Fluid 主题引入(客户端)</h2><ol>
-<li>设置主题配置文件 <code>comments -&gt; type</code> 值为 <code>waline</code></li>
-</ol>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># 评论插件</span><br><span class="hljs-comment"># Comment plugin</span><br><span class="hljs-attr">comments:</span><br>	<span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>	<span class="hljs-comment"># 指定的插件，需要同时设置对应插件的必要参数</span><br>	<span class="hljs-comment"># The specified plugin needs to set the necessary parameters at the same time</span><br>	<span class="hljs-comment"># Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis</span><br>	<span class="hljs-attr">type:</span> <span class="hljs-string">waline</span><br><br></code></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>配置 waline 相关信息</li>
-</ol>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Waline</span><br><span class="hljs-comment"># 从 Valine 衍生而来，额外增加了服务端和多种功能</span><br><span class="hljs-comment"># Derived from Valine, with self-hosted service and new features</span><br><span class="hljs-comment"># See: https://waline.js.org/</span><br><span class="hljs-attr">waline:</span><br>  <span class="hljs-attr">serverURL:</span> <span class="hljs-string">&#x27;path-to-your-server-url&#x27;</span><br>  <span class="hljs-attr">placeholder:</span> <span class="hljs-string">遗憾莫过于难忘你的背影，却找不到你来过的痕迹</span> <span class="hljs-string">...</span><br>  <span class="hljs-attr">path:</span> <span class="hljs-string">window.location.pathname</span><br>  <span class="hljs-attr">avatar:</span> <span class="hljs-string">retro</span><br>  <span class="hljs-attr">meta:</span> [<span class="hljs-string">&#x27;nick&#x27;</span>, <span class="hljs-string">&#x27;mail&#x27;</span>, <span class="hljs-string">&#x27;link&#x27;</span>]<br>  <span class="hljs-attr">pageSize:</span> <span class="hljs-number">10</span><br>  <span class="hljs-attr">lang:</span> <span class="hljs-string">zh-CN</span><br>  <span class="hljs-attr">highlight:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">avatarCDN:</span> <span class="hljs-string">&#x27;&#x27;</span><br>  <span class="hljs-attr">avatarForce:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">requiredFields:</span> []<br>  <span class="hljs-attr">emojiCDN:</span><br>  <span class="hljs-attr">emojiMaps:</span><br>  <span class="hljs-attr">anonymous:</span><br></code></pre></td></tr></table></figure>
-
-<div class="note note-success">
-            <p>最重要的是填入之前得到的 <strong>服务端地址</strong> 到<code>serverURL</code> 中</p>
-          </div>
-
-
-
-<h2 id="评论管理-管理端"><a href="#评论管理-管理端" class="headerlink" title="评论管理 (管理端)"></a>评论管理 (管理端)</h2><ol>
-<li>部署完成后，请访问 <code>&lt;serverURL&gt;/ui/register</code> 进行注册。首个注册的人会被设定成管理员。</li>
-<li>管理员登陆后，即可看到评论管理界面。在这里可以修改、标记或删除评论。</li>
-<li>用户也通过评论框注册账号，登陆后会跳转到自己的档案页。</li>
-</ol>
 
                 
               </div>
@@ -558,47 +486,6 @@
   <a href="/categories/Hexo/" class="category-chain-item">Hexo</a>
   
   
-    <span>></span>
-    
-  <a href="/categories/Hexo/Waline/" class="category-chain-item">Waline</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/" class="category-chain-item">中间件</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/Waline/" class="category-chain-item">Waline</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Web%E5%89%8D%E7%AB%AF/" class="category-chain-item">Web前端</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Web%E5%89%8D%E7%AB%AF/Waline/" class="category-chain-item">Waline</a>
-  
-  
-
-  
 
       </span>
     
@@ -611,11 +498,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Web%E5%89%8D%E7%AB%AF/" class="print-no-link">#Web前端</a>
+        <a href="/tags/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" class="print-no-link">#使用教程</a>
       
-        <a href="/tags/%E4%B8%AD%E9%97%B4%E4%BB%B6/" class="print-no-link">#中间件</a>
-      
-        <a href="/tags/Waline/" class="print-no-link">#Waline</a>
+        <a href="/tags/Hexo/" class="print-no-link">#Hexo</a>
       
     </div>
   
@@ -627,8 +512,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Waline-1-在个人博客中配置Waline评论插件</div>
-      <div>https://www.eurekady.com/2023/08/20/Waline-1-在个人博客中配置Waline评论插件/</div>
+      <div>Hexo-1-搭建博客系统</div>
+      <div>https://www.eurekady.com/2023/08/17/Hexo-1-create-blog-system/</div>
     </div>
     <div class="license-meta">
       
@@ -640,13 +525,13 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年8月20日</div>
+          <div>2023年8月17日</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年8月22日</div>
+          <div>2023年8月27日</div>
         </div>
       
       
@@ -677,21 +562,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/08/21/Live2d-%E7%9C%8B%E6%9D%BF%E5%A8%98%E6%B7%BB%E5%8A%A0%E6%95%99%E7%A8%8B/" title="Live2d-看板娘添加教程">
+                      <a href="/2023/08/19/Hexo-2-Basic-commands-of-hexo/" title="Hexo-2-hexo的基本命令">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Live2d-看板娘添加教程</span>
+                        <span class="hidden-mobile">Hexo-2-hexo的基本命令</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2023/08/20/Git%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8BGitHub%E9%85%8D%E7%BD%AE/" title="Git连接远程GitHub配置">
-                        <span class="hidden-mobile">Git连接远程GitHub配置</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>

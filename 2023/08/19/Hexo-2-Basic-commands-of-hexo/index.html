@@ -16,28 +16,27 @@
   <meta name="author" content="Deng Yang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="关于如何使用Hexo博客系统的Fluid主题，包括文章页设置。Fluid：一款 Material Design 风格的主题。">
+    <meta name="description" content="本文章主要叙述如何使用Hexo的命令来生成文章、建站、生成静态文件、本地预览、发布等。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于fluid主题的配置-文章页设置篇">
-<meta property="og:url" content="https://www.eurekady.com/2023/08/20/%E5%85%B3%E4%BA%8Efluid%E4%B8%BB%E9%A2%98%E7%9A%84%E9%85%8D%E7%BD%AE-%E6%96%87%E7%AB%A0%E9%A1%B5%E8%AE%BE%E7%BD%AE%E7%AF%87/index.html">
+<meta property="og:title" content="Hexo-2-hexo的基本命令">
+<meta property="og:url" content="https://www.eurekady.com/2023/08/19/Hexo-2-Basic-commands-of-hexo/index.html">
 <meta property="og:site_name" content="遥望">
-<meta property="og:description" content="关于如何使用Hexo博客系统的Fluid主题，包括文章页设置。Fluid：一款 Material Design 风格的主题。">
+<meta property="og:description" content="本文章主要叙述如何使用Hexo的命令来生成文章、建站、生成静态文件、本地预览、发布等。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.eurekady.com/img/page/fluid_about/home.png">
-<meta property="article:published_time" content="2023-08-19T16:50:12.000Z">
-<meta property="article:modified_time" content="2023-08-22T02:49:34.403Z">
+<meta property="og:image" content="https://www.eurekady.com/img/page/hexo_about/home.jpg">
+<meta property="article:published_time" content="2023-08-19T09:28:54.000Z">
+<meta property="article:modified_time" content="2023-08-22T02:49:09.167Z">
 <meta property="article:author" content="Deng Yang">
 <meta property="article:tag" content="使用教程">
 <meta property="article:tag" content="Hexo">
-<meta property="article:tag" content="Fluid">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.eurekady.com/img/page/fluid_about/home.png">
+<meta name="twitter:image" content="https://www.eurekady.com/img/page/hexo_about/home.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>关于fluid主题的配置-文章页设置篇 - 遥望</title>
+  <title>Hexo-2-hexo的基本命令 - 遥望</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -256,7 +255,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="关于fluid主题的配置-文章页设置篇"></span>
+            <span id="subtitle" data-typed-text="Hexo-2-hexo的基本命令"></span>
           
         </div>
 
@@ -272,8 +271,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-08-20 00:50" pubdate>
-          2023年8月20日 凌晨
+        <time datetime="2023-08-19 17:28" pubdate>
+          2023年8月19日 下午
         </time>
       </span>
     
@@ -284,7 +283,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.3k 字
+          477 字
         
       </span>
     
@@ -295,7 +294,7 @@
         
         
         
-          10 分钟
+          2 分钟
         
       </span>
     
@@ -404,7 +403,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">关于fluid主题的配置-文章页设置篇</h1>
+            <h1 id="seo-header">Hexo-2-hexo的基本命令</h1>
             
               <p class="note note-info">
                 
@@ -418,101 +417,29 @@
               <div class="markdown-body">
                 
                 <blockquote>
-<p>关于如何使用Hexo博客系统的Fluid主题，包括文章页设置。Fluid：一款 Material Design 风格的主题。</p>
+<p>主要叙述如何使用Hexo的命令来生成文章、建站、生成静态文件、本地预览、发布等。</p>
 </blockquote>
-<h2 id="文章页"><a href="#文章页" class="headerlink" title="文章页"></a>文章页</h2><h3 id="文章在首页封面图"><a href="#文章在首页封面图" class="headerlink" title="文章在首页封面图"></a>文章在首页封面图</h3><p>对于单篇文章，在文章开头 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter"><font color='#3eaf7c'>Front-matter </font> </a>中配置 <code>index_img</code> 属性。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">文章标题</span><br><span class="hljs-attr">tags:</span> [<span class="hljs-string">Hexo</span>, <span class="hljs-string">Fluid</span>]<br><span class="hljs-attr">index_img:</span> <span class="hljs-string">/img/example.jpg</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2019-10-10 10:00:00</span><br><span class="hljs-meta">---</span><br><span class="hljs-string">以下是文章内容</span><br></code></pre></td></tr></table></figure>
+<h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><h3 id="init"><a href="#init" class="headerlink" title="init"></a>init</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ <span class="hljs-built_in">mkdir</span> myblog<br>$ <span class="hljs-built_in">cd</span> myblog<br>$ npx hexo init<br></code></pre></td></tr></table></figure>
 
-<p>和 Banner 配置相同，<code>/img/example.jpg</code> 对应的是存放在 <code>/source/img/example.jpg</code> 目录下的图片（目录也可自定义，但必须在 source 目录下）。</p>
-<p>也可以使用外链 Url 的绝对路径。</p>
-<p>如果想统一给文章设置一个默认图片（文章不设置 <code>index_img</code> 则默认使用这张图片），可在**_config.yml**中设置：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">post:</span><br>  <span class="hljs-attr">default_index_img:</span> <span class="hljs-string">/img/example.jpg</span><br></code></pre></td></tr></table></figure>
-
-<p>当 <code>default_index_img</code> 和 <code>index_img</code> 都为空时，该文章在首页将不显示图片。</p>
-<h3 id="文章页顶部大图"><a href="#文章页顶部大图" class="headerlink" title="文章页顶部大图"></a>文章页顶部大图</h3><p>默认显示<strong>主题配置</strong>中的 <code>post.banner_img</code>，如需要设置单个文章的 Banner，在 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter"><font color='#3eaf7c'>Front-matter </font> </a>中指定 <code>banner_img</code> 属性。</p>
-<p>本地图片存放位置同上。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">文章标题</span><br><span class="hljs-attr">tags:</span> [<span class="hljs-string">Hexo</span>, <span class="hljs-string">Fluid</span>]<br><span class="hljs-attr">index_img:</span> <span class="hljs-string">/img/example.jpg</span><br><span class="hljs-attr">banner_img:</span> <span class="hljs-string">/img/post_banner.jpg</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2019-10-10 10:00:00</span><br><span class="hljs-meta">---</span><br><span class="hljs-string">以下是文章内容</span><br></code></pre></td></tr></table></figure>
+<p>新建一个网站。</p>
+<h3 id="new"><a href="#new" class="headerlink" title="new"></a>new</h3><p>改命令主要用于新建一篇文章，生成关于页以及自定义页面。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ npx hexo new <span class="hljs-string">&quot;文章标题&quot;</span> <span class="hljs-comment"># 生成文章</span><br>-------------------------------<br>$ hexo new page about <span class="hljs-comment"># 生成关于页</span><br>-------------------------------<br>$ hexo new page example <span class="hljs-comment"># 生成自定义页面</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">code:</span><br>  <span class="hljs-attr">copy_btn:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">highlight:</span><br>    <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>    <span class="hljs-attr">line_number:</span> <span class="hljs-literal">true</span><br>    <span class="hljs-attr">lib:</span> <span class="hljs-string">&quot;highlightjs&quot;</span><br>    <span class="hljs-attr">highlightjs:</span><br>      <span class="hljs-attr">style:</span> <span class="hljs-string">&#x27;Github Gist&#x27;</span><br>      <span class="hljs-attr">bg_color:</span> <span class="hljs-literal">false</span><br>    <span class="hljs-attr">prismjs:</span><br>      <span class="hljs-attr">style:</span> <span class="hljs-string">&quot;default&quot;</span><br>      <span class="hljs-attr">preprocess:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
+<h2 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ hexo generate<br></code></pre></td></tr></table></figure>
 
-<p><code>copy_btn</code>: 是否开启复制代码的按钮</p>
-<p><code>line_number</code>: 是否开启行号</p>
-<p><code>highlight</code>: 是否开启代码高亮</p>
-<p><code>lib</code>: 选择生成高亮的库，可选项: highlightjs、prismjs，对应下面两组配置，高亮的配置说明具体见**_config.yml**中的注释</p>
-<h3 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h3><p>开启评论需要在**_config.fluid.yml**中开启并指定评论模块：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">post:</span><br>  <span class="hljs-attr">comments:</span><br>    <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>    <span class="hljs-attr">type:</span> <span class="hljs-string">waline</span><br></code></pre></td></tr></table></figure>
+<p>生成静态文件。</p>
+<h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ hexo server<br></code></pre></td></tr></table></figure>
 
-<p>然后在下方还要设置对应评论模块的参数，比如 waline 对应设置：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">waline:</span><br>  <span class="hljs-attr">serverURL:</span> <br>  <span class="hljs-attr">path:</span> <span class="hljs-string">window.location.pathname</span><br>  <span class="hljs-attr">meta:</span> [<span class="hljs-string">&#x27;nick&#x27;</span>, <span class="hljs-string">&#x27;mail&#x27;</span>, <span class="hljs-string">&#x27;link&#x27;</span>]<br>  <span class="hljs-attr">requiredMeta:</span> [<span class="hljs-string">&#x27;nick&#x27;</span>]<br>  <span class="hljs-attr">lang:</span> <span class="hljs-string">&#x27;zh-CN&#x27;</span><br>  <span class="hljs-attr">emoji:</span> [<span class="hljs-string">&#x27;https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo&#x27;</span>,<span class="hljs-string">&#x27;https://unpkg.com/@waline/emojis@1.2.0/bilibili&#x27;</span>, <span class="hljs-string">&#x27;https://unpkg.com/@waline/emojis@1.2.0/tw-emoji&#x27;</span>]<br>  <span class="hljs-attr">dark:</span> <span class="hljs-string">&#x27;html[data-user-color-scheme=&quot;dark&quot;]&#x27;</span><br>  <span class="hljs-attr">wordLimit:</span> <span class="hljs-number">0</span><br>  <span class="hljs-attr">pageSize:</span> <span class="hljs-number">10</span><br>  <span class="hljs-attr">reaction:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
+<p>启动服务器。默认情况下，访问网址为： <code>http://localhost:4000/</code>。</p>
+<h2 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ hexo clean<br></code></pre></td></tr></table></figure>
 
-<p>当前支持的评论插件如下：</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://valine.js.org/configuration.html"><font color='#3eaf7c'>Valine </font></a>:基于 LeanCloud</li>
-<li><a target="_blank" rel="noopener" href="https://waline.js.org/"><font color='#3eaf7c'>Waline </font></a>: 从 Valine 衍生而来，额外增加了服务端和多种功能</li>
-<li><a target="_blank" rel="noopener" href="https://github.com/gitalk/gitalk"><font color='#3eaf7c'>Gitalk </font></a>: 基于 GitHub Issues</li>
-<li><a target="_blank" rel="noopener" href="https://utteranc.es/"><font color='#3eaf7c'>Utterances</font></a>: 基于 GitHub Issues</li>
-<li><a target="_blank" rel="noopener" href="https://disqus.com/"><font color='#3eaf7c'>Disqus</font></a>: 基于第三方的服务</li>
-<li><a target="_blank" rel="noopener" href="http://changyan.kuaizhan.com/"><font color='#3eaf7c'>畅言</font></a>: 基于第三方的服务</li>
-<li><a target="_blank" rel="noopener" href="https://www.livere.com/"><font color='#3eaf7c'>来必力(Livere)</font></a>: 基于第三方的服务</li>
-<li><a target="_blank" rel="noopener" href="https://remark42.com/"><font color='#3eaf7c'>Remark42</font></a>: 需要自托管服务端</li>
-<li><a target="_blank" rel="noopener" href="https://twikoo.js.org/"><font color='#3eaf7c'>Twikoo</font></a>: 基于腾讯云开发</li>
-<li><a target="_blank" rel="noopener" href="https://cusdis.com/"><font color='#3eaf7c'>Cusdis</font></a>: 基于第三方服务或自托管服务</li>
-<li><a target="_blank" rel="noopener" href="https://giscus.app/zh-CN"><font color='#3eaf7c'>Giscus</font></a>: 基于 GitHub Discussion</li>
-</ul>
-<div class="note note-success">
-            <p>关于本博客使用的waline评论系统请查看另一篇博客 <a href="/2023/08/20/Waline-1-%E5%9C%A8%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E9%85%8D%E7%BD%AEWaline%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/" title="Waline-1-在个人博客中配置Waline评论插件"><strong>Waline-1-在个人博客中配置Waline评论插件</strong></a> </p>
-          </div>
+<p>清除缓存文件 (<code>db.json</code>) 和已生成的静态文件 (<code>public</code>)。</p>
+<p>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
+<h2 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ hexo deploy<br></code></pre></td></tr></table></figure>
 
-
-
-<h3 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h3><p>主题内置了脚注语法支持，可以在文章末尾自动生成带有锚点的脚注，该功能在**_config.fluid.yml**中默认开启：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">post:</span><br>  <span class="hljs-attr">footnote:</span><br>    <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>    <span class="hljs-attr">header:</span> <span class="hljs-string">&#x27;&#x27;</span><br></code></pre></td></tr></table></figure>
-
-<p>脚注语法如下：</p>
-<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs md">这是一句话[^1]<br>[<span class="hljs-symbol">^1</span>]: <span class="hljs-link">这是对应的脚注</span><br></code></pre></td></tr></table></figure>
-
-
-
-<h3 id="Tag-插件"><a href="#Tag-插件" class="headerlink" title="Tag 插件"></a>Tag 插件</h3><h4 id="便签"><a href="#便签" class="headerlink" title="便签"></a>便签</h4><p>在 markdown 中加入如下的代码来使用便签：</p>
-<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs md">&#123;% note success %&#125;<br>文字 或者 <span class="hljs-code">`markdown`</span> 均可<br>&#123;% endnote %&#125;<br></code></pre></td></tr></table></figure>
-
-<p>可选标签：</p>
-<div class="note note-success">
-            <p>success</p>
-          </div>
-
-<div class="note note-primary">
-            <p>primary</p>
-          </div>
-
-<div class="note note-warning">
-            <p>warning</p>
-          </div>
-
-<div class="note note-secondary">
-            <p>secondary</p>
-          </div>
-
-<div class="note note-danger">
-            <p>danger</p>
-          </div>
-
-<div class="note note-light">
-            <p>light</p>
-          </div>
-
-<div class="note note-info">
-            <p>info</p>
-          </div>
-
-<div class="note note-warning">
-            <p><strong><font color='ff9933'>WARNING</font></strong></p><p>使用时 <code>&lt;div class=&quot;note note-primary&quot;&gt;             &lt;p&gt;&lt;code&gt;和&lt;/code&gt;&lt;/p&gt;           &lt;/div&gt;</code> 需单独一行，否则会出现问题</p>
-          </div>
-
-
-
+<p>部署网站。</p>
 
                 
               </div>
@@ -534,23 +461,6 @@
   <a href="/categories/Hexo/" class="category-chain-item">Hexo</a>
   
   
-    <span>></span>
-    
-  <a href="/categories/Hexo/Theme/" class="category-chain-item">Theme</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Fluid/" class="category-chain-item">Fluid</a>
-  
-  
 
       </span>
     
@@ -567,8 +477,6 @@
       
         <a href="/tags/Hexo/" class="print-no-link">#Hexo</a>
       
-        <a href="/tags/Fluid/" class="print-no-link">#Fluid</a>
-      
     </div>
   
 </div>
@@ -579,8 +487,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>关于fluid主题的配置-文章页设置篇</div>
-      <div>https://www.eurekady.com/2023/08/20/关于fluid主题的配置-文章页设置篇/</div>
+      <div>Hexo-2-hexo的基本命令</div>
+      <div>https://www.eurekady.com/2023/08/19/Hexo-2-Basic-commands-of-hexo/</div>
     </div>
     <div class="license-meta">
       
@@ -592,7 +500,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年8月20日</div>
+          <div>2023年8月19日</div>
         </div>
       
       
@@ -629,9 +537,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/08/20/%E5%85%B3%E4%BA%8Efluid%E4%B8%BB%E9%A2%98%E7%9A%84%E9%85%8D%E7%BD%AE-%E5%85%B3%E4%BA%8E%E9%A1%B5%E8%AE%BE%E7%BD%AE%E7%AF%87/" title="关于fluid主题的配置-关于页设置篇">
+                      <a href="/2023/08/20/about-fluid-global-settings/" title="关于fluid主题的配置-全局设置篇">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">关于fluid主题的配置-关于页设置篇</span>
+                        <span class="hidden-mobile">关于fluid主题的配置-全局设置篇</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -639,8 +547,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/08/20/%E5%85%B3%E4%BA%8Efluid%E4%B8%BB%E9%A2%98%E7%9A%84%E9%85%8D%E7%BD%AE-%E9%A6%96%E9%A1%B5%E8%AE%BE%E7%BD%AE%E7%AF%87/" title="关于fluid主题的配置-首页设置篇">
-                        <span class="hidden-mobile">关于fluid主题的配置-首页设置篇</span>
+                      <a href="/2023/08/17/Hexo-1-create-blog-system/" title="Hexo-1-搭建博客系统">
+                        <span class="hidden-mobile">Hexo-1-搭建博客系统</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

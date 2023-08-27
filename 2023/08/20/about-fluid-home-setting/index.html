@@ -16,16 +16,16 @@
   <meta name="author" content="Deng Yang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="关于如何使用Hexo博客系统的Fluid主题，包括全局设置。Fluid：一款 Material Design 风格的主题。">
+    <meta name="description" content="关于如何使用Hexo博客系统的Fluid主题，包括首页设置。Fluid：一款 Material Design 风格的主题。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于fluid主题的配置-全局设置篇">
-<meta property="og:url" content="https://www.eurekady.com/2023/08/20/%E5%85%B3%E4%BA%8Efluid%E4%B8%BB%E9%A2%98%E7%9A%84%E9%85%8D%E7%BD%AE-%E5%85%A8%E5%B1%80%E8%AE%BE%E7%BD%AE%E7%AF%87/index.html">
+<meta property="og:title" content="关于fluid主题的配置-首页设置篇">
+<meta property="og:url" content="https://www.eurekady.com/2023/08/20/about-fluid-home-setting/index.html">
 <meta property="og:site_name" content="遥望">
-<meta property="og:description" content="关于如何使用Hexo博客系统的Fluid主题，包括全局设置。Fluid：一款 Material Design 风格的主题。">
+<meta property="og:description" content="关于如何使用Hexo博客系统的Fluid主题，包括首页设置。Fluid：一款 Material Design 风格的主题。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.eurekady.com/img/page/fluid_about/home.png">
-<meta property="article:published_time" content="2023-08-19T16:28:54.000Z">
-<meta property="article:modified_time" content="2023-08-22T02:49:17.289Z">
+<meta property="article:published_time" content="2023-08-19T16:41:07.000Z">
+<meta property="article:modified_time" content="2023-08-22T02:49:25.861Z">
 <meta property="article:author" content="Deng Yang">
 <meta property="article:tag" content="使用教程">
 <meta property="article:tag" content="Hexo">
@@ -37,7 +37,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>关于fluid主题的配置-全局设置篇 - 遥望</title>
+  <title>关于fluid主题的配置-首页设置篇 - 遥望</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -256,7 +256,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="关于fluid主题的配置-全局设置篇"></span>
+            <span id="subtitle" data-typed-text="关于fluid主题的配置-首页设置篇"></span>
           
         </div>
 
@@ -272,7 +272,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-08-20 00:28" pubdate>
+        <time datetime="2023-08-20 00:41" pubdate>
           2023年8月20日 凌晨
         </time>
       </span>
@@ -284,7 +284,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.7k 字
+          657 字
         
       </span>
     
@@ -295,7 +295,7 @@
         
         
         
-          8 分钟
+          3 分钟
         
       </span>
     
@@ -404,7 +404,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">关于fluid主题的配置-全局设置篇</h1>
+            <h1 id="seo-header">关于fluid主题的配置-首页设置篇</h1>
             
               <p class="note note-info">
                 
@@ -418,46 +418,40 @@
               <div class="markdown-body">
                 
                 <blockquote>
-<p>关于如何使用Hexo博客系统的Fluid主题，包括全局设置。Fluid：一款 Material Design 风格的主题。</p>
+<p>关于如何使用Hexo博客系统的Fluid主题，包括首页设置。Fluid：一款 Material Design 风格的主题。</p>
 </blockquote>
-<h2 id="全局设置"><a href="#全局设置" class="headerlink" title="全局设置"></a>全局设置</h2><h3 id="页面顶部大图"><a href="#页面顶部大图" class="headerlink" title="页面顶部大图"></a>页面顶部大图</h3><p>每个页面都会有个 <code>banner_img</code> 属性，可以使用本地图片的相对路径，也可以使用外站链接。</p>
-<p>图片都是放在网站文件夹下的 <code>source</code> 文件夹下，并且路径写法为：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">banner_img:</span> <span class="hljs-string">/img/bg/index.jpg</span> 		<span class="hljs-comment"># 对应的本地路径是 /source/img/bg/index.jpg</span><br></code></pre></td></tr></table></figure>
+<h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><h3 id="打字机效果"><a href="#打字机效果" class="headerlink" title="打字机效果"></a>打字机效果</h3><p>首页大图的打字机效果可以在 <strong>_config.fluid.yml</strong>  中设置：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">index:</span><br>  <span class="hljs-attr">slogan:</span><br>    <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>    <span class="hljs-attr">text:</span> <span class="hljs-string">这是一条</span> <span class="hljs-string">Slogan</span><br>    <span class="hljs-attr">api:</span><br>      <span class="hljs-attr">enable:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">url:</span> <span class="hljs-string">&quot;https://v1.hitokoto.cn/&quot;</span><br>      <span class="hljs-attr">method:</span> <span class="hljs-string">&quot;GET&quot;</span><br>      <span class="hljs-attr">headers:</span> &#123;&#125;<br>      <span class="hljs-attr">keys:</span> [<span class="hljs-string">&quot;hitokoto&quot;</span>]<br></code></pre></td></tr></table></figure>
 
+<p>如果 <code>text</code> 为空，则按 <strong>_config.yml</strong> 中的 <code>subtitle</code> 显示。</p>
 <div class="note note-warning">
-            <p><strong>TIP</strong></p><p>如果是本地图片，目录文件夹可自定义，但必须在 source 目录下，博客与主题的 source 目录最终会合并，因此优先选择博客的 source。</p><p>图片大小建议压缩到 1MB 以内，否则会严重拖慢页面加载</p>
+            <p><strong>TIP</strong></p><p>请求API的功能必须同时开启打字机效果才行。</p>
           </div>
 
 
 
-<h3 id="博客标题"><a href="#博客标题" class="headerlink" title="博客标题"></a>博客标题</h3><p>页面左上角的博客标题，默认使用  <strong>_config.yml</strong> 中的 <code>title</code> , 并且这个配置同时控制网站标签页名称。</p>
-<p>如需单独设置左上角的名称，可以到  <strong>_config.fluid.yml</strong>  中设置：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">navbar:</span><br>	<span class="hljs-attr">blog_title:</span> <span class="hljs-string">博客标题</span><br></code></pre></td></tr></table></figure>
+<h3 id="文章摘要"><a href="#文章摘要" class="headerlink" title="文章摘要"></a>文章摘要</h3><p>开关自动摘要（默认开启）：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">index:</span><br>  <span class="hljs-attr">auto_excerpt:</span><br>    <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
 
+<p>若要手动指定摘要，使用 <code>&lt;!-- more --&gt;</code> MD文档里划分，如：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs md">正文的一部分作为摘要<br>&lt;!-- more --&gt;<br>余下的正文<br></code></pre></td></tr></table></figure>
 
-
-<h3 id="导航菜单"><a href="#导航菜单" class="headerlink" title="导航菜单"></a>导航菜单</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">navbar:</span><br>  <span class="hljs-attr">menu:</span><br>    <span class="hljs-bullet">-</span> &#123; <span class="hljs-attr">key:</span> <span class="hljs-string">&#x27;home&#x27;</span>, <span class="hljs-attr">link:</span> <span class="hljs-string">&#x27;/&#x27;</span>, <span class="hljs-attr">icon:</span> <span class="hljs-string">&#x27;iconfont icon-home-fill&#x27;</span> &#125;<br>    <span class="hljs-bullet">-</span> &#123; <span class="hljs-attr">key:</span> <span class="hljs-string">&#x27;tag&#x27;</span>, <span class="hljs-attr">link:</span> <span class="hljs-string">&#x27;/tags/&#x27;</span>, <span class="hljs-attr">icon:</span> <span class="hljs-string">&#x27;iconfont icon-tags-fill&#x27;</span> &#125;<br>    <span class="hljs-bullet">-</span> &#123; <span class="hljs-attr">key:</span> <span class="hljs-string">&#x27;about&#x27;</span>, <span class="hljs-attr">link:</span> <span class="hljs-string">&#x27;/about/&#x27;</span>, <span class="hljs-attr">icon:</span> <span class="hljs-string">&#x27;iconfont icon-user-fill&#x27;</span>, <span class="hljs-attr">name:</span> <span class="hljs-string">&#x27;联系我&#x27;</span> &#125;<br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code> key</code>：菜单名称</li>
-<li><code>link</code>：跳转的链接</li>
-<li><code>icon</code>：图标的css class，可以省略（即没有图标），主题内置图标访问<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/icon/#%E5%86%85%E7%BD%AE%E7%A4%BE%E4%BA%A4%E5%9B%BE%E6%A0%87"><font color='#3eaf7c'>这里</font></a></li>
-</ul>
-<p>另外支持二级菜单（下拉菜单），配置写法如下：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">menu:</span><br>  <span class="hljs-bullet">-</span> &#123;<br>      <span class="hljs-attr">key:</span> <span class="hljs-string">&#x27;文档&#x27;</span>,<br>      <span class="hljs-attr">icon:</span> <span class="hljs-string">&#x27;iconfont icon-books&#x27;</span>,<br>      <span class="hljs-attr">submenu:</span> [<br>        &#123; <span class="hljs-attr">key:</span> <span class="hljs-string">&#x27;主题博客&#x27;</span>, <span class="hljs-attr">link:</span> <span class="hljs-string">&#x27;https://hexo.fluid-dev.com/&#x27;</span> &#125;,<br>        &#123; <span class="hljs-attr">key:</span> <span class="hljs-string">&#x27;配置指南&#x27;</span>, <span class="hljs-attr">link:</span> <span class="hljs-string">&#x27;https://hexo.fluid-dev.com/docs/guide/&#x27;</span> &#125;,<br>        &#123; <span class="hljs-attr">key:</span> <span class="hljs-string">&#x27;图标用法&#x27;</span>, <span class="hljs-attr">link:</span> <span class="hljs-string">&#x27;https://hexo.fluid-dev.com/docs/icon/&#x27;</span> &#125;<br>      ]<br>  &#125;<br><span class="hljs-comment">#</span><br></code></pre></td></tr></table></figure>
-
-
-
-<h3 id="全局字体"><a href="#全局字体" class="headerlink" title="全局字体"></a>全局字体</h3><p>所有页面的字体统一在 <strong>_config.fluid.yml</strong>  中的配置项配置：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">font:</span>  					       <span class="hljs-comment"># 主题字体配置</span><br>  <span class="hljs-attr">font_size:</span> <span class="hljs-string">16px</span>             <span class="hljs-comment"># 全局字号</span><br>  <span class="hljs-attr">font_family:</span> <span class="hljs-string">PingFang</span> <span class="hljs-string">SC</span>    <span class="hljs-comment"># 全局字体族</span><br>  <span class="hljs-attr">code_font_size:</span> <span class="hljs-number">85</span><span class="hljs-string">%</span>         <span class="hljs-comment"># 代码的字号</span><br></code></pre></td></tr></table></figure>
-
-<p>如果想设置单独的页面，可以直接在 markdown 里通过 style 标签实现：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs html">---<br>title: example<br>---<br><br><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css"></span><br><span class="language-css">  <span class="hljs-comment">/* 设置整个页面的字体 */</span></span><br><span class="language-css">  <span class="hljs-selector-tag">html</span>, <span class="hljs-selector-tag">body</span>, <span class="hljs-selector-class">.markdown-body</span> &#123;</span><br><span class="language-css">    <span class="hljs-attribute">font-family</span>: KaiTi,<span class="hljs-string">&quot;Microsoft YaHei&quot;</span>,Georgia, sans, serif;</span><br><span class="language-css">    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">15px</span>;</span><br><span class="language-css">  &#125;</span><br><span class="language-css"></span><br><span class="language-css">  <span class="hljs-comment">/* 只设置 markdown 字体 */</span></span><br><span class="language-css">  <span class="hljs-selector-class">.markdown-body</span> &#123;</span><br><span class="language-css">    <span class="hljs-attribute">font-family</span>: KaiTi,<span class="hljs-string">&quot;Microsoft YaHei&quot;</span>,Georgia, sans, serif;</span><br><span class="language-css">    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">15px</span>;</span><br><span class="language-css">  &#125;</span><br><span class="language-css"></span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<p>或者在 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter"><font color='#3eaf7c'>Front-matter </font></a> 里面设置 <code>excerpt</code> 字段，如：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">这是标题</span><br><span class="hljs-attr">excerpt:</span> <span class="hljs-string">这是摘要</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
 
 <div class="note note-success">
-            <p>更详细的配置请访问：<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/">https://hexo.fluid-dev.com/docs/guide/</a></p>
+            <p><strong>TIP</strong></p><p>优先级: 手动摘要 &gt; 自动摘要</p><p>如果关闭自动摘要，并且没有设置手动摘要，摘要区域空白</p><p>无论哪种摘要都最多显示 3 行，当屏幕宽度不足时会隐藏部分摘要。</p>
           </div>
 
+
+
+<h3 id="文章跳转方式"><a href="#文章跳转方式" class="headerlink" title="文章跳转方式"></a>文章跳转方式</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">index:</span><br>	<span class="hljs-attr">post_url_target:</span> <span class="hljs-string">_self</span><br></code></pre></td></tr></table></figure>
+
+<p>可选值：</p>
+<ol>
+<li><code>_blank:</code> 新标签页打开</li>
+<li><code>_self</code>: 当前页打开</li>
+</ol>
 
                 
               </div>
@@ -524,8 +518,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>关于fluid主题的配置-全局设置篇</div>
-      <div>https://www.eurekady.com/2023/08/20/关于fluid主题的配置-全局设置篇/</div>
+      <div>关于fluid主题的配置-首页设置篇</div>
+      <div>https://www.eurekady.com/2023/08/20/about-fluid-home-setting/</div>
     </div>
     <div class="license-meta">
       
@@ -574,9 +568,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/08/20/%E5%85%B3%E4%BA%8Efluid%E4%B8%BB%E9%A2%98%E7%9A%84%E9%85%8D%E7%BD%AE-%E9%A6%96%E9%A1%B5%E8%AE%BE%E7%BD%AE%E7%AF%87/" title="关于fluid主题的配置-首页设置篇">
+                      <a href="/2023/08/20/about-fluid-article-setting/" title="关于fluid主题的配置-文章页设置篇">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">关于fluid主题的配置-首页设置篇</span>
+                        <span class="hidden-mobile">关于fluid主题的配置-文章页设置篇</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -584,8 +578,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/08/19/Hexo-2-hexo%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" title="Hexo-2-hexo的基本命令">
-                        <span class="hidden-mobile">Hexo-2-hexo的基本命令</span>
+                      <a href="/2023/08/20/about-fluid-global-settings/" title="关于fluid主题的配置-全局设置篇">
+                        <span class="hidden-mobile">关于fluid主题的配置-全局设置篇</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

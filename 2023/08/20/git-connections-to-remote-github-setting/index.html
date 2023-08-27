@@ -16,28 +16,27 @@
   <meta name="author" content="Deng Yang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="关于如何使用Hexo博客系统的Fluid主题，包括首页设置。Fluid：一款 Material Design 风格的主题。">
+    <meta name="description" content="本文章主要记录Git使用期间出现访问GitHub仓库无权限的问题，成功解决后即可向仓库中推送代码。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于fluid主题的配置-首页设置篇">
-<meta property="og:url" content="https://www.eurekady.com/2023/08/20/%E5%85%B3%E4%BA%8Efluid%E4%B8%BB%E9%A2%98%E7%9A%84%E9%85%8D%E7%BD%AE-%E9%A6%96%E9%A1%B5%E8%AE%BE%E7%BD%AE%E7%AF%87/index.html">
+<meta property="og:title" content="Git连接远程GitHub配置">
+<meta property="og:url" content="https://www.eurekady.com/2023/08/20/git-connections-to-remote-github-setting/index.html">
 <meta property="og:site_name" content="遥望">
-<meta property="og:description" content="关于如何使用Hexo博客系统的Fluid主题，包括首页设置。Fluid：一款 Material Design 风格的主题。">
+<meta property="og:description" content="本文章主要记录Git使用期间出现访问GitHub仓库无权限的问题，成功解决后即可向仓库中推送代码。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.eurekady.com/img/page/fluid_about/home.png">
-<meta property="article:published_time" content="2023-08-19T16:41:07.000Z">
-<meta property="article:modified_time" content="2023-08-22T02:49:25.861Z">
+<meta property="og:image" content="https://www.eurekady.com/img/page/git_about/home.jpg">
+<meta property="article:published_time" content="2023-08-20T09:45:01.000Z">
+<meta property="article:modified_time" content="2023-08-22T02:50:10.198Z">
 <meta property="article:author" content="Deng Yang">
-<meta property="article:tag" content="使用教程">
-<meta property="article:tag" content="Hexo">
-<meta property="article:tag" content="Fluid">
+<meta property="article:tag" content="工具">
+<meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.eurekady.com/img/page/fluid_about/home.png">
+<meta name="twitter:image" content="https://www.eurekady.com/img/page/git_about/home.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>关于fluid主题的配置-首页设置篇 - 遥望</title>
+  <title>Git连接远程GitHub配置 - 遥望</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -256,7 +255,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="关于fluid主题的配置-首页设置篇"></span>
+            <span id="subtitle" data-typed-text="Git连接远程GitHub配置"></span>
           
         </div>
 
@@ -272,8 +271,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-08-20 00:41" pubdate>
-          2023年8月20日 凌晨
+        <time datetime="2023-08-20 17:45" pubdate>
+          2023年8月20日 下午
         </time>
       </span>
     
@@ -284,7 +283,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          657 字
+          1.1k 字
         
       </span>
     
@@ -295,7 +294,7 @@
         
         
         
-          3 分钟
+          5 分钟
         
       </span>
     
@@ -404,7 +403,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">关于fluid主题的配置-首页设置篇</h1>
+            <h1 id="seo-header">Git连接远程GitHub配置</h1>
             
               <p class="note note-info">
                 
@@ -418,40 +417,38 @@
               <div class="markdown-body">
                 
                 <blockquote>
-<p>关于如何使用Hexo博客系统的Fluid主题，包括首页设置。Fluid：一款 Material Design 风格的主题。</p>
+<p>本文章主要记录Git使用期间出现访问GitHub仓库无权限的问题，成功解决后即可想仓库中推送代码。</p>
 </blockquote>
-<h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><h3 id="打字机效果"><a href="#打字机效果" class="headerlink" title="打字机效果"></a>打字机效果</h3><p>首页大图的打字机效果可以在 <strong>_config.fluid.yml</strong>  中设置：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">index:</span><br>  <span class="hljs-attr">slogan:</span><br>    <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>    <span class="hljs-attr">text:</span> <span class="hljs-string">这是一条</span> <span class="hljs-string">Slogan</span><br>    <span class="hljs-attr">api:</span><br>      <span class="hljs-attr">enable:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">url:</span> <span class="hljs-string">&quot;https://v1.hitokoto.cn/&quot;</span><br>      <span class="hljs-attr">method:</span> <span class="hljs-string">&quot;GET&quot;</span><br>      <span class="hljs-attr">headers:</span> &#123;&#125;<br>      <span class="hljs-attr">keys:</span> [<span class="hljs-string">&quot;hitokoto&quot;</span>]<br></code></pre></td></tr></table></figure>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<li>申请GitHub账号</li>
+<li>了解基础的Git语法</li>
+<li>本地搭建好Git运行环境</li>
+</ul>
+<h2 id="建立远程仓库"><a href="#建立远程仓库" class="headerlink" title="建立远程仓库"></a>建立远程仓库</h2><p>登录到自己的GitHub之后点击右上角的+号创建仓库。</p>
+<p><img src="/img/page/2023/08/20/createRepo.png" srcset="/img/loading.gif" lazyload></p>
+<p>输入相应信息即可。</p>
+<h2 id="配置SSH秘钥"><a href="#配置SSH秘钥" class="headerlink" title="配置SSH秘钥"></a>配置SSH秘钥</h2><h3 id="现有问题"><a href="#现有问题" class="headerlink" title="现有问题"></a>现有问题</h3><p>当我们输入下面命令时：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ ssh -T git@github.com<br></code></pre></td></tr></table></figure>
 
-<p>如果 <code>text</code> 为空，则按 <strong>_config.yml</strong> 中的 <code>subtitle</code> 显示。</p>
-<div class="note note-warning">
-            <p><strong>TIP</strong></p><p>请求API的功能必须同时开启打字机效果才行。</p>
-          </div>
+<p>会输出下面的信息：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">git@github.com: Permission denied (publickey).<br></code></pre></td></tr></table></figure>
 
+<p>说明我们没有配置秘钥，无权访问仓库。</p>
+<h3 id="创建SSH秘钥"><a href="#创建SSH秘钥" class="headerlink" title="创建SSH秘钥"></a>创建SSH秘钥</h3><p>在shell窗口中输入下面命令：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ ssh-keygen -t rsa -C <span class="hljs-string">&quot;你的GitHub邮箱&quot;</span><br></code></pre></td></tr></table></figure>
 
+<p>一直按回车即可：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs sh">Generating public/private rsa key pair.<br>Enter file <span class="hljs-keyword">in</span> <span class="hljs-built_in">which</span> to save the key (/Users/dengyang/.ssh/id_rsa): <br>Enter passphrase (empty <span class="hljs-keyword">for</span> no passphrase): <br>Enter same passphrase again: <br>Your identification has been saved <span class="hljs-keyword">in</span> /Users/dengyang/.ssh/id_rsa<br>Your public key has been saved <span class="hljs-keyword">in</span> /Users/dengyang/.ssh/id_rsa.pub<br>The key fingerprint is:<br>SHA256:47soutsMxsyEnrHNpu8FaKgRyFuFPN0lIrfOU7sQCLg 779581791@qq.com<br>The key<span class="hljs-string">&#x27;s randomart image is:</span><br><span class="hljs-string">+---[RSA 3072]----+</span><br><span class="hljs-string">|....o+....       |</span><br><span class="hljs-string">|+ .+=.o..        |</span><br><span class="hljs-string">|oo o.o .         |</span><br><span class="hljs-string">|Eo+ o o .        |</span><br><span class="hljs-string">|+=.. = .S        |</span><br><span class="hljs-string">|+** . o...       |</span><br><span class="hljs-string">|.+*+ . ..        |</span><br><span class="hljs-string">| .o+o  . .       |</span><br><span class="hljs-string">| .**o.. o.       |</span><br><span class="hljs-string">+----[SHA256]-----+</span><br></code></pre></td></tr></table></figure>
 
-<h3 id="文章摘要"><a href="#文章摘要" class="headerlink" title="文章摘要"></a>文章摘要</h3><p>开关自动摘要（默认开启）：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">index:</span><br>  <span class="hljs-attr">auto_excerpt:</span><br>    <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
+<p>出现上面信息即为成功。我们需要到&#x2F;Users&#x2F;dengyang&#x2F;.ssh&#x2F;id_rsa.pub这个文件中复制出秘钥。</p>
+<h3 id="配置GitHub"><a href="#配置GitHub" class="headerlink" title="配置GitHub"></a>配置GitHub</h3><p>到用户界面的setting中，选择 SSH and GPG keys，然后选择 new SSH key，填入相应信息即可。</p>
+<p><img src="/img/page/2023/08/20/setGitHubSSL.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>再次输入下面命令：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ ssh -T git@github.com <br></code></pre></td></tr></table></figure>
 
-<p>若要手动指定摘要，使用 <code>&lt;!-- more --&gt;</code> MD文档里划分，如：</p>
-<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs md">正文的一部分作为摘要<br>&lt;!-- more --&gt;<br>余下的正文<br></code></pre></td></tr></table></figure>
+<p>出现下面信息即为成功：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">Hi DY-d! You<span class="hljs-string">&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span><br></code></pre></td></tr></table></figure>
 
-<p>或者在 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter"><font color='#3eaf7c'>Front-matter </font></a> 里面设置 <code>excerpt</code> 字段，如：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">这是标题</span><br><span class="hljs-attr">excerpt:</span> <span class="hljs-string">这是摘要</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-
-<div class="note note-success">
-            <p><strong>TIP</strong></p><p>优先级: 手动摘要 &gt; 自动摘要</p><p>如果关闭自动摘要，并且没有设置手动摘要，摘要区域空白</p><p>无论哪种摘要都最多显示 3 行，当屏幕宽度不足时会隐藏部分摘要。</p>
-          </div>
-
-
-
-<h3 id="文章跳转方式"><a href="#文章跳转方式" class="headerlink" title="文章跳转方式"></a>文章跳转方式</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">index:</span><br>	<span class="hljs-attr">post_url_target:</span> <span class="hljs-string">_self</span><br></code></pre></td></tr></table></figure>
-
-<p>可选值：</p>
-<ol>
-<li><code>_blank:</code> 新标签页打开</li>
-<li><code>_self</code>: 当前页打开</li>
-</ol>
 
                 
               </div>
@@ -470,24 +467,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Hexo/" class="category-chain-item">Hexo</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Hexo/Theme/" class="category-chain-item">Theme</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Fluid/" class="category-chain-item">Fluid</a>
+  <a href="/categories/Git/" class="category-chain-item">Git</a>
   
   
 
@@ -502,11 +482,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" class="print-no-link">#使用教程</a>
+        <a href="/tags/%E5%B7%A5%E5%85%B7/" class="print-no-link">#工具</a>
       
-        <a href="/tags/Hexo/" class="print-no-link">#Hexo</a>
-      
-        <a href="/tags/Fluid/" class="print-no-link">#Fluid</a>
+        <a href="/tags/Git/" class="print-no-link">#Git</a>
       
     </div>
   
@@ -518,8 +496,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>关于fluid主题的配置-首页设置篇</div>
-      <div>https://www.eurekady.com/2023/08/20/关于fluid主题的配置-首页设置篇/</div>
+      <div>Git连接远程GitHub配置</div>
+      <div>https://www.eurekady.com/2023/08/20/git-connections-to-remote-github-setting/</div>
     </div>
     <div class="license-meta">
       
@@ -568,9 +546,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/08/20/%E5%85%B3%E4%BA%8Efluid%E4%B8%BB%E9%A2%98%E7%9A%84%E9%85%8D%E7%BD%AE-%E6%96%87%E7%AB%A0%E9%A1%B5%E8%AE%BE%E7%BD%AE%E7%AF%87/" title="关于fluid主题的配置-文章页设置篇">
+                      <a href="/2023/08/20/Waline-1-config-waline-in-blog/" title="Waline-1-在个人博客中配置Waline评论插件">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">关于fluid主题的配置-文章页设置篇</span>
+                        <span class="hidden-mobile">Waline-1-在个人博客中配置Waline评论插件</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -578,8 +556,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/08/20/%E5%85%B3%E4%BA%8Efluid%E4%B8%BB%E9%A2%98%E7%9A%84%E9%85%8D%E7%BD%AE-%E5%85%A8%E5%B1%80%E8%AE%BE%E7%BD%AE%E7%AF%87/" title="关于fluid主题的配置-全局设置篇">
-                        <span class="hidden-mobile">关于fluid主题的配置-全局设置篇</span>
+                      <a href="/2023/08/20/about-fluid-custom-setting/" title="关于fluid主题的配置-自定义页设置篇">
+                        <span class="hidden-mobile">关于fluid主题的配置-自定义页设置篇</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
