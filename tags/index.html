@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fav/title.png">
-  <link rel="icon" href="/img/fav/title.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fav/avatar.png">
+  <link rel="icon" href="/img/fav/avatar.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -29,7 +29,7 @@
   
   
   <title>标签 - 遥望</title>
-  
+
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
@@ -76,16 +76,30 @@
 
 
   
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 
 <body>
-  
+  <div>
+	<div class='real_mask' style="
+		background-color: rgba(0,0,0,0.3);
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: -777;
+	"></div>
+	<div id="banner_video_insert">
+	</div>	
+	<div id='vvd_banner_img'>
+	</div>
+</div>
+<div id="banner"></div>
 
   <header>
     
 
-<div class="header-inner" style="height: 80vh;">
+<div class="header-inner" style="height: 75vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -221,9 +235,9 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('https://uipv4.zywvvd.com:33030/HexoFiles/new/bg-trans.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
@@ -235,16 +249,76 @@
       </div>
 
       
-        <div class="scroll-down-bar">
-          <i class="iconfont icon-arrowdown"></i>
-        </div>
-      
     </div>
   </div>
 </div>
 
 </div>
 
+
+	<div class="banner" id='banner' >
+
+		<div class="full-bg-img" >
+
+			
+				<script>
+					var ua = navigator.userAgent;
+					var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+						isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+						isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+						isMobile = isIphone || isAndroid;
+
+					function set_video_attr(id){
+
+						var height = document.body.clientHeight
+						var width = document.body.clientWidth
+						var video_item = document.getElementById(id);
+
+						if (height / width < 0.56){
+							video_item.setAttribute('width', '100%');
+							video_item.setAttribute('height', 'auto');
+						} else {
+							video_item.setAttribute('height', '100%');
+							video_item.setAttribute('width', 'auto');
+						}
+					}
+
+					$.getJSON('/cust_js/video.json', function(data){
+						if (true){
+							var video_list_length = data.length
+							var seed = Math.random()
+							index = Math.floor(seed * video_list_length)
+							
+							video_url = data[index][0]
+							pre_show_image_url = data[index][1]
+							
+							banner_obj = document.getElementById("banner")
+							banner_obj.style.cssText = "background: url('" + pre_show_image_url + "') no-repeat; background-size: cover;"
+
+							vvd_banner_obj = document.getElementById("vvd_banner_img")
+
+							vvd_banner_content = "<img id='banner_img_item' src='" + pre_show_image_url + "' style='height: 100%; position: fixed; z-index: -999'>"
+							vvd_banner_obj.innerHTML = vvd_banner_content
+							set_video_attr('banner_img_item')
+
+							if (!isMobile) {
+								video_html_res = "<video id='video_item' style='position: fixed; z-index: -888;'  muted='muted' src=" + video_url + " autoplay='autoplay' loop='loop'></video>"
+								document.getElementById("banner_video_insert").innerHTML = video_html_res;
+								set_video_attr('video_item')
+							}
+						}
+					});
+
+					if (!isMobile){
+						window.onresize = function(){
+							set_video_attr('video_item')
+							}
+						}
+				</script>
+			
+			</div>
+		</div>
+    </div>
   </header>
 
   <main>
@@ -259,7 +333,7 @@
                 
 
 <div class="text-center tagcloud">
-  <a href="/tags/Fluid/" style="font-size: 22.5px; color: #779bd3">Fluid</a> <a href="/tags/Git/" style="font-size: 15px; color: #bbe">Git</a> <a href="/tags/Hexo/" style="font-size: 30px; color: #337ab7">Hexo</a> <a href="/tags/Live2d/" style="font-size: 15px; color: #bbe">Live2d</a> <a href="/tags/NetWord/" style="font-size: 15px; color: #bbe">NetWord</a> <a href="/tags/Theme/" style="font-size: 15px; color: #bbe">Theme</a> <a href="/tags/Waline/" style="font-size: 15px; color: #bbe">Waline</a> <a href="/tags/Web%E5%89%8D%E7%AB%AF/" style="font-size: 18.75px; color: #99abe0">Web前端</a> <a href="/tags/%E4%B8%AD%E9%97%B4%E4%BB%B6/" style="font-size: 15px; color: #bbe">中间件</a> <a href="/tags/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" style="font-size: 26.25px; color: #558ac5">使用教程</a> <a href="/tags/%E5%9F%9F%E5%90%8D/" style="font-size: 15px; color: #bbe">域名</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 15px; color: #bbe">工具</a>
+  <a href="/tags/Fluid/" style="font-size: 24px; color: #6994cd">Fluid</a> <a href="/tags/Git/" style="font-size: 15px; color: #bbe">Git</a> <a href="/tags/Hexo/" style="font-size: 30px; color: #337ab7">Hexo</a> <a href="/tags/Live2d/" style="font-size: 18px; color: #a0aee3">Live2d</a> <a href="/tags/NetWord/" style="font-size: 15px; color: #bbe">NetWord</a> <a href="/tags/Theme/" style="font-size: 15px; color: #bbe">Theme</a> <a href="/tags/Waline/" style="font-size: 15px; color: #bbe">Waline</a> <a href="/tags/Web%E5%89%8D%E7%AB%AF/" style="font-size: 21px; color: #85a1d8">Web前端</a> <a href="/tags/%E4%B8%AD%E9%97%B4%E4%BB%B6/" style="font-size: 15px; color: #bbe">中间件</a> <a href="/tags/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" style="font-size: 27px; color: #4e87c2">使用教程</a> <a href="/tags/%E5%9F%9F%E5%90%8D/" style="font-size: 15px; color: #bbe">域名</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 15px; color: #bbe">工具</a>
 </div>
 
               </div>
@@ -393,7 +467,7 @@
 
 
   
-<script src="https://unpkg.com/dengy-oos@2.0.0/index.js"></script>
+<script src="https://unpkg.com/dengy-oos@2.0.1/index.js"></script>
 <script src="/cust_js/custom.js"></script>
 
 

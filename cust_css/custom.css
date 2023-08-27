@@ -67,4 +67,14 @@ svg {
         height: 397.5px !important;
         z-index: 998;
     }
-
+#toc > p,
+#toc-body > .tocbot-list > li > a,
+#toc-body > .tocbot-list > li > ol > li > a,
+.footer-content > a,
+.footer-content > i,
+.footer-content > br > span,
+.footer-content > span,
+.footer-content > p,
+.statistics > span {
+	color: #f8f8ff;
+}
