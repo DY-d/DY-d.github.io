@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/DY-d/HexoImg/files/img/202308281624864.png">
-  <link rel="icon" href="https://cdn.jsdelivr.net/gh/DY-d/HexoImg/files/img/202308281624864.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/202308281624864.png">
+  <link rel="icon" href="/img/202308281624864.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -16,26 +16,27 @@
   <meta name="author" content="Deng Yang">
   <meta name="keywords" content="个人博客, Java, Web, 前端">
   
-    <meta name="description" content="当我们搭建好一个博客系统之后，并部署到GitHub pages上面，但是这时候我们还不能通过Google或者百度来搜索到我们的网站，这时候我们就要生成sitemap文件，并提交给站长，让其抓取我们的网页。">
+    <meta name="description" content="本文主要介绍如何上传自己的JS包（库）到NPM上，然后能让他人使用 npm install 命令来下载你上传的包（库）。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="NetWork-在hexo博客中生成sitemap并提交给Google和百度站长">
-<meta property="og:url" content="https://www.eurekady.com/article/NetWork/NetWork-generate-sitemap-in-blog/63d3695fb3e4/index.html">
+<meta property="og:title" content="NPM-如何上传自己的JS等文件">
+<meta property="og:url" content="https://www.eurekady.com/article/Node-js/NPM/npm-cust-js-upload/a8e69a687399/index.html">
 <meta property="og:site_name" content="遥望">
-<meta property="og:description" content="当我们搭建好一个博客系统之后，并部署到GitHub pages上面，但是这时候我们还不能通过Google或者百度来搜索到我们的网站，这时候我们就要生成sitemap文件，并提交给站长，让其抓取我们的网页。">
+<meta property="og:description" content="本文主要介绍如何上传自己的JS包（库）到NPM上，然后能让他人使用 npm install 命令来下载你上传的包（库）。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/DY-d/HexoImg/files/img/202308281636799.jpg">
-<meta property="article:published_time" content="2023-08-27T13:59:02.000Z">
-<meta property="article:modified_time" content="2023-08-28T09:09:34.299Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/DY-d/HexoImg/files/img/202309041735072.webp">
+<meta property="article:published_time" content="2023-09-04T09:18:32.000Z">
+<meta property="article:modified_time" content="2023-09-05T03:33:08.540Z">
 <meta property="article:author" content="Deng Yang">
-<meta property="article:tag" content="NetWork">
+<meta property="article:tag" content="Web前端">
+<meta property="article:tag" content="NPM">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/DY-d/HexoImg/files/img/202308281636799.jpg">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/DY-d/HexoImg/files/img/202309041735072.webp">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>NetWork-在hexo博客中生成sitemap并提交给Google和百度站长 - 遥望</title>
+  <title>NPM-如何上传自己的JS等文件 - 遥望</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -262,7 +263,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="NetWork-在hexo博客中生成sitemap并提交给Google和百度站长"></span>
+            <span id="subtitle" data-typed-text="NPM-如何上传自己的JS等文件"></span>
           
         </div>
 
@@ -278,8 +279,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-08-27 21:59" pubdate>
-          2023年8月27日 晚上
+        <time datetime="2023-09-04 17:18" pubdate>
+          2023年9月4日 下午
         </time>
       </span>
     
@@ -290,7 +291,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.1k 字
+          831 字
         
       </span>
     
@@ -301,7 +302,7 @@
         
         
         
-          5 分钟
+          4 分钟
         
       </span>
     
@@ -414,12 +415,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">NetWork-在hexo博客中生成sitemap并提交给Google和百度站长</h1>
+            <h1 id="seo-header">NPM-如何上传自己的JS等文件</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：18 小时前
+                    本文最后更新于：14 天前
                   
                 
               </p>
@@ -428,38 +429,40 @@
               <div class="markdown-body">
                 
                 <blockquote>
-<p>当我们搭建好一个博客系统之后，并部署到GitHub pages上面，但是这时候我们还不能通过Google或者百度来搜索到我们的网站，这时候我们就要生成sitemap文件，并提交给站长，让其抓取我们的网页。</p>
+<p>本文主要介绍如何上传自己的JS包（库）到NPM上，然后能让他人使用 npm install 命令来下载你上传的包（库）。</p>
 </blockquote>
-<h2 id="生成Sitemap"><a href="#生成Sitemap" class="headerlink" title="生成Sitemap"></a>生成Sitemap</h2><h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><p>进入到博客根目录，分别安装普通sitemap和百度sitemap的依赖</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh">npm install hexo-generator-sitemap --save<br>npm install hexo-generator-baidu-sitemap --save<br></code></pre></td></tr></table></figure>
+<h2 id="注册账号"><a href="#注册账号" class="headerlink" title="注册账号"></a>注册账号</h2><p>首先需要在npm的官网注册自己的账户，后续需要使用。<a target="_blank" rel="noopener" href="https://www.npmjs.com/"><font color='#3eaf7c'>官网地址</font></a></p>
+<h2 id="建立本地仓库"><a href="#建立本地仓库" class="headerlink" title="建立本地仓库"></a>建立本地仓库</h2><h4 id="1-本地新建一个文件夹"><a href="#1-本地新建一个文件夹" class="headerlink" title="1. 本地新建一个文件夹"></a>1. 本地新建一个文件夹</h4><h4 id="2-将自己的JS包或者库放进文件夹中"><a href="#2-将自己的JS包或者库放进文件夹中" class="headerlink" title="2. 将自己的JS包或者库放进文件夹中"></a>2. 将自己的JS包或者库放进文件夹中</h4><h4 id="3-初始化仓库"><a href="#3-初始化仓库" class="headerlink" title="3. 初始化仓库"></a>3. 初始化仓库</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ npm init<br></code></pre></td></tr></table></figure>
+
+<p>随后终端便会要求你输入各种配置信息，</p>
+<ul>
+<li>name： 模块名，之后发布之后就可以让用户npm install xxxx来引用你的开源模块了</li>
+<li>version：版本号，语义版本号分为X.Y.Z三位，分别代表主版本号、次版本号和补丁版本号。当代码变更时，版本号按以下原则更新。如果只是修复bug，需要更新Z位。 如果是新增了功能，但是向下兼容，需要更新Y位。如果有大变动，向下不兼容，需要更新X位。</li>
+<li>description： 简单介绍自己的模块</li>
+<li>main： 入口文件，必要，当通过require(‘xxx’)时，是读取main里声明的文件</li>
+<li>test command： 测试命令</li>
+<li>git repository： git仓库地址</li>
+<li>keywords： 关键词，可以通过npm搜索你填写的关键词找到你的模块</li>
+<li>author： 作者信息，可以之后编辑更详细一些</li>
+<li>license（ISC）： 代码授权许可</li>
+</ul>
+<p>这一步可以忽略，因为后续可以修改，直接一直回车即可。</p>
+<h4 id="4-重新设置镜像"><a href="#4-重新设置镜像" class="headerlink" title="4. 重新设置镜像"></a>4. 重新设置镜像</h4><p>因为之前我们可能在安装npm的过程中，根据网上的教程修改了镜像，例如使用了阿里的镜像源 <a href="https://link.juejin.cn/?target=https://registry.npm.taobao.org">registry.npm.taobao.org</a>。但是在我们上传JS给NPM的时候需要修改为官方的镜像。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ npm config <span class="hljs-built_in">set</span> registry https://registry.npm.org <br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="配置_config.yml"></a>配置_config.yml</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">plugins:</span> <br>  <span class="hljs-string">hexo-generator-baidu-sitemap</span><br>  <span class="hljs-string">hexo-generator-sitemap</span><br><br><span class="hljs-attr">baidusitemap:</span><br>    <span class="hljs-attr">path:</span> <span class="hljs-string">baidusitemap.xml</span><br><span class="hljs-attr">sitemap:</span><br>    <span class="hljs-attr">path:</span> <span class="hljs-string">sitemap.xml</span><br></code></pre></td></tr></table></figure>
+<h4 id="5-登录npm"><a href="#5-登录npm" class="headerlink" title="5. 登录npm"></a>5. 登录npm</h4><p>使用下面命令登录npm，输入之前的用户名、密码和邮箱。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ npm login<br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="生成站点文件"><a href="#生成站点文件" class="headerlink" title="生成站点文件"></a>生成站点文件</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh">npx hexo clean<br>npx hexo g<br></code></pre></td></tr></table></figure>
+<h4 id="6-发布"><a href="#6-发布" class="headerlink" title="6. 发布"></a>6. 发布</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">$ sudo npm publish<br></code></pre></td></tr></table></figure>
 
-<p>当我们执行上面的命令之后，在public文件夹下就会生成对应的<code>sitemap.xml</code>和<code>baidusitemap.xml</code>两个站点文件。</p>
-<h2 id="提交Google站长"><a href="#提交Google站长" class="headerlink" title="提交Google站长"></a>提交Google站长</h2><h3 id="查看是否被Google收录"><a href="#查看是否被Google收录" class="headerlink" title="查看是否被Google收录"></a>查看是否被Google收录</h3><p>因为我之前是提交过了，所以可以被检索到。如果你没有生成过sitemap，那么就搜索不到结果。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/DY-d/HexoImg/files/img/202308281708625.jpg" srcset="/img/loading.gif" lazyload></p>
-<h3 id="提交sitemap"><a href="#提交sitemap" class="headerlink" title="提交sitemap"></a>提交sitemap</h3><p>可以进入<a target="_blank" rel="noopener" href="https://search.google.com/search-console"><font color='#3eaf7c'>Google Search Console</font></a> ，这里需要使用Google账户登录，选择<code>网域</code>，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/DY-d/HexoImg/files/img/202308281708088.jpg" srcset="/img/loading.gif" lazyload></p>
-<p>然后需要到你域名提供商的网站进行DNS验证：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/DY-d/HexoImg/files/img/202308281709644.png" srcset="/img/loading.gif" lazyload></p>
-<p>将上述字符串复制到@域名解析中，记录类型选择TXT记录，主机记录为Google提供的字符串。</p>
-<p>随后就可以回到Google页面选择验证，验证成功就会看到下面的页面：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/DY-d/HexoImg/files/img/202308281709042.png" srcset="/img/loading.gif" lazyload></p>
-<p>到Google search console选择sitemap，输入自己域名下的sitemap.xml地址：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/DY-d/HexoImg/files/img/202308281709686.jpg" srcset="/img/loading.gif" lazyload></p>
-<p>上面即为成功！</p>
-<h2 id="提交百度站长"><a href="#提交百度站长" class="headerlink" title="提交百度站长"></a>提交百度站长</h2><blockquote>
-<p>对于 hexo 博客来说，如果你是部署在 GitHub Pages，那么你是无法被百度收录的，因为 GitHub 禁止了百度爬虫，最常见的解决办法是双线部署到 Coding Pages 和 GitHub Pages。可以参考<a href="https://link.zhihu.com/?target=https://blog.csdn.net/qq_36759224/article/details/100879609">《Hexo 双线部署到 Coding Pages 和 GitHub Pages 并实现全站 HPPTS》</a></p>
-</blockquote>
 <div class="note note-warning">
-            <p><strong>TIP</strong></p><p>如果选择 Coding Pages部署的话，我们可以选择境内和境外服务器，但是境外只能选择香港的服务器，而香港服务器CDN加速很慢，甚至不如GitHub Pages的访问速度，唯一的一点就是绑定自己域名的话不需要备案；而选择境内服务器的话，绑定自己域名需要备案。这个就需要你自己做出抉择了。</p>
+            <p><strong>如果报错的话，可能是之前注册npm的时候没有验证邮箱！</strong></p><p>并且如果我们对这个仓库进行了修改，再次发布的时候，需要到 <code>package.json</code> 文件中修改版本号，否则也会冲突。</p>
           </div>
+
 
                 
               </div>
@@ -478,8 +481,32 @@
     
       <span class="category-chain">
         
-  <a href="/categories/NetWork/" class="category-chain-item">NetWork</a>
+  <a href="/categories/Web%E5%89%8D%E7%AB%AF/" class="category-chain-item">Web前端</a>
   
+  
+    <span>></span>
+    
+  <a href="/categories/Web%E5%89%8D%E7%AB%AF/NPM/" class="category-chain-item">NPM</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Node-js/" class="category-chain-item">Node.js</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/Node-js/NPM/" class="category-chain-item">NPM</a>
+  
+  
+
   
 
       </span>
@@ -493,7 +520,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/NetWork/" class="print-no-link">#NetWork</a>
+        <a href="/tags/Web%E5%89%8D%E7%AB%AF/" class="print-no-link">#Web前端</a>
+      
+        <a href="/tags/NPM/" class="print-no-link">#NPM</a>
       
     </div>
   
@@ -505,8 +534,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>NetWork-在hexo博客中生成sitemap并提交给Google和百度站长</div>
-      <div>https://www.eurekady.com/article/NetWork/NetWork-generate-sitemap-in-blog/63d3695fb3e4/</div>
+      <div>NPM-如何上传自己的JS等文件</div>
+      <div>https://www.eurekady.com/article/Node-js/NPM/npm-cust-js-upload/a8e69a687399/</div>
     </div>
     <div class="license-meta">
       
@@ -518,13 +547,13 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年8月27日</div>
+          <div>2023年9月4日</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年8月28日</div>
+          <div>2023年9月5日</div>
         </div>
       
       
@@ -559,8 +588,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/article/Web%E5%89%8D%E7%AB%AF/Live2d/Live2d-moc3-kanbangirl-add/3221144989c3/" title="Live2d-moc3格式看板娘使用教程">
-                        <span class="hidden-mobile">Live2d-moc3格式看板娘使用教程</span>
+                      <a href="/article/WebSite/WebSite-generate-sitemap-in-blog/af858dee2f52/" title="WebSite-在hexo博客中生成sitemap并提交给Google和百度站长">
+                        <span class="hidden-mobile">WebSite-在hexo博客中生成sitemap并提交给Google和百度站长</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

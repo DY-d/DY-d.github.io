@@ -58,6 +58,10 @@ svg {
 	transition: .4s;
 }
 
+.index-card:nth-child(even) .index-img {
+ order: 2;
+}
+
 .index-card:hover .index-img {
 	transform: scale(1.05);
 }
