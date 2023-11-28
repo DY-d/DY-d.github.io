@@ -90,6 +90,8 @@ svg {
 #toc > p,
 #toc-body > .tocbot-list > li > a,
 #toc-body > .tocbot-list > li > ol > li > a,
+#toc-body > .tocbot-list > li > ol > li > ol > li > a,
+#toc-body > .tocbot-list > li > ol > li > ol > li > ol > li > a,
 .footer-content > a,
 .footer-content > i,
 .footer-content > br > span,
